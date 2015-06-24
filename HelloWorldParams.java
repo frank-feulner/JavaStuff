@@ -17,11 +17,13 @@ public class HelloWorldParams {
 
   public static String MakeMyString(int myParam, String[] myArr)
   {
-    if myParam < Responses.length {
+    int myArrayLength = Responses.length;
+    if (myParam < myArrayLength) {
     String tmpInputString = myArr[myParam];
     String tmpString = "Hello " + tmpInputString + " World";
     return tmpString;
     }
+    else {return "Bye World. Y u no enter valid param. Izza 0 to 3";}
   }
 
   public static void main(String[] args) {
